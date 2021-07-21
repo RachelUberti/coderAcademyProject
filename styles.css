@@ -1,0 +1,190 @@
+/* usually there is a built-in margin of 8 pixels which is designed for text layout. 
+We need to remove this margin for creating layouts */
+body{
+    font-family:arial, sans-serif;
+    margin:0;
+    padding:0;
+    }
+
+
+/* To ensure that each image in the page will not overflow their container, 
+we set the maximum width of all images to be 100%. */
+img{
+    max-width:100%;
+    }
+
+header{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    }
+
+.navigation > ul{
+    list-style:none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    }
+
+/* To be able to add padding around the links, 
+they need to be displayed as block elements 
+(inline elements, such as links, by default, 
+cannot have vertical padding, eg, the top and bottom padding).  */
+.navigation a{
+    display: block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    }
+
+.navigation a:hover{
+    color: white;
+    background-color: black;
+    }
+
+.navigation .active{
+    background-color:#666666;
+    }
+
+.navigation .active a{
+    color:white;
+    }
+
+.logo {
+    max-width: 60px;
+    padding: 5px;
+    }
+    /* Using align-self, we can set a flex item to align itself within a flex container. 
+    Since our header is a flex container (set to display: flex), 
+    we can use align-self to move our navigation element to the bottom edge of the header.*/
+.navigation {
+    align-self: flex-end;
+    }
+    
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #c5f3f7;
+    }
+
+
+    /* Maximum width of 960 pixels is a standard width, but it could be set wider depending 
+    on the amount of content. A width of 960px is smaller than some of the smaller screens 
+    and can also be easily divided by 2, 3 or 4 for a multi-column layout. We use max-width 
+    rather than width to allow for the container to "shrink" when the screen is narrower than 
+    960 pixels. 
+    When an element has a width or max-width property defined, setting its margin left and right 
+    to auto will center it within the page. We set this to our container to "contain" all our 
+    content at the centre of the page.*/
+.container{
+    max-width:960px;
+    margin: 0 auto;
+    }
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+
+.column{
+    flex: 1;
+    margin-right: 15px;
+    }
+
+.column:last-child{
+    margin-right:0;
+    }
+
+.cta-banner{
+    background-color:darkcyan;
+    min-height:200px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+    /* In this class, we set the banner container (cta-banner) as a flexbox container, 
+    but since the button and the text are on different horizontal lines, we set the 
+    flex-direction to be column. To align them both horizontally and vertically, 
+    we use justify-content and align-items both set to center. */
+
+.cta-banner h3{
+    color:white;
+    font-size:32px;
+    }
+
+.cta-row{
+    margin-top:30px;
+    width:100%;
+    padding-left:20px;
+    padding-right:20px;
+    box-sizing: border-box;
+    justify-content: flex-end;
+    }
+    
+.cta-button{
+    background-color:white;
+    color:blue;
+    display:inline-block;
+    text-decoration: none;
+    padding:10px;
+    border-radius:4px;
+}
+
+footer{
+    background-color: #c5f3f7;
+    min-height: 200px;
+    margin-top: 50px;
+    }
+
+.footer-row{
+    justify-content: center;
+    padding-top: 20px;
+    }
+
+.icon{
+    width:30px;
+    height:30px;
+    padding:10px;
+    border-radius: 50%;
+    background-color:white;
+    margin-left:10px;
+    margin-right:10px;
+    }
+
+#contact-form {
+    max-width:480px;
+    }
+
+.label{
+    display:block;
+    margin-top:12px;
+    font-weight: bold;
+    padding:5px 0;
+    }
+
+.input{
+    display: block;
+    width:100%;
+    padding:5px;
+    box-sizing: border-box;
+    font-size:1.2em;
+    }
+
+.button-row{
+    margin-top:20px;
+    }
+
+.form-button{
+    padding:10px;
+    border:1px solid darkturquoise;
+    background-color:darkturquoise;
+    color:white;
+    border-radius:4px;
+    font-size:1em;
+    }
+            

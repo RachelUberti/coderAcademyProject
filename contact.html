@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+
+   <!-- Favicon -->
+   <link rel="icon" href="images/favicon.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+    <div class="logo">
+        <a href="index.html"></a>
+        <img src="images/logo.png" />
+        </a>
+    </div>
+      <nav class="navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="news.html">News</a></li>
+          <li class="active"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <h2>Get In Touch</h2>
+      <p>
+        We love to hear your stories. Good stories, not so good stories, we
+        would love to hear them all.
+      </p>
+      <div class="row">
+        <div class="column">
+          <h4>Our office</h4>
+          <address>
+            22 Kelly Street<br />
+            Glebe<br />
+            New South Wales<br />
+            Australia
+          </address>
+        </div>
+        <div class="column">
+          <h4>Phone</h4>
+          <p>Contact us via telephone on the number below</p>
+          <a href="tel:02 1234 5678">02 1234 5678</a>
+        </div>
+        <div class="column">
+          <h4>Email</h4>
+          <p>Contact us via email on the email address below</p>
+          <a href="mailto:info@greentees.com">info@greentees.com</a>
+        </div>
+      </div>
+      <h3>Write us a message</h3>
+      <form
+        id="contact-form"
+        action="http://example.com/handler.php"
+        method="post"
+      >
+        <label for="name" class="label">Your Name</label>
+        <input
+          id="name"
+          class="input"
+          type="text"
+          name="name"
+          placeholder="your name"
+        />
+        <label for="email" class="label">Your Email Address</label>
+        <input
+          id="email"
+          class="input"
+          type="email"
+          name="email"
+          placeholder="your email address"
+        />
+        <label for="subject" class="label">Subject</label>
+        <input
+          id="subject"
+          class="input"
+          type="text"
+          name="subject"
+          placeholder="message subject"
+        />
+        <label for="message" class="label">Your Message</label>
+        <textarea
+          id="message"
+          class="input"
+          rows="5"
+          cols="30"
+          name="message"
+          placeholder="hello there"
+        ></textarea>
+        <div class="row button-row">
+          <button type="reset" class="form-button" name="clear">
+            Clear Form
+          </button>
+          <button type="submit" class="form-button" name="submit">
+            Send Message
+          </button>
+        </div>
+      </form>
+    </div>
+    <footer>
+      <div class="row footer-row">
+        <div class="icon">
+          <a href="https://facebook.com/username/">
+            <img src="images/icon-facebook.png" />
+          </a>
+        </div>
+        <div class="icon">
+          <a href="https://twitter.com/username/">
+            <img src="images/icon-twitter.png" />
+          </a>
+        </div>
+        <div class="icon">
+          <a href="https://instagram.com/username/">
+            <img src="images/icon-instagram.png" />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
